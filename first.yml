@@ -1,0 +1,4 @@
+- name: First play
+  hosts: all
+  roles:
+    - sample
