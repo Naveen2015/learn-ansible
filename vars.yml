@@ -14,4 +14,4 @@
       vars:
         url: tasklevel@
       ansible.builtin.debug:
-        msg: "{{url}}"
+        msg: {{url}}
