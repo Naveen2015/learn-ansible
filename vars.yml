@@ -1,10 +1,17 @@
-- name: Playlevel variables
+- name: First play - Playlevel Variables
   hosts: all
   vars:
     url: "playlevel"
   tasks:
     - name: print variable
-      vars:
-        url: tasklevel
       ansible.builtin.debug:
         msg: "{{ url }}"
+
+- name: Second play - TaskLevel Variables
+  hosts: all
+  tasks:
+    - name: print task level variable
+      vars:
+        url: tasklevel@
+      ansible.builtin:debug:
+        msg: "{{url}}"
