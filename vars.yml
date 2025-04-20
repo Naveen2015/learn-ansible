@@ -1,0 +1,6 @@
+- name: Playlevel variables
+  hosts: all
+  vars:
+    url: "playlevel"
+  ansible.builtin.debug:
+    msg: {{url}}
