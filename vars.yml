@@ -2,5 +2,7 @@
   hosts: all
   vars:
     url: "playlevel"
-  ansible.builtin.debug:
-    msg: {{url}}
+  tasks:
+    - name: print variable
+      ansible.builtin.debug:
+        msg: value- {{ url }}
