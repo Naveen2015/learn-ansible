@@ -1,0 +1,6 @@
+- name: Play
+  hosts: all
+  tasks:
+    - name: Task levl
+      ansible.builtin.debug:
+        msg: "{{test}}"
