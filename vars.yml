@@ -4,5 +4,7 @@
     url: "playlevel"
   tasks:
     - name: print variable
+      vars:
+        url: tasklevel
       ansible.builtin.debug:
         msg: "{{ url }}"
